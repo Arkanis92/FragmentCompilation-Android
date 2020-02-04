@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+    <include layout="@layout/toolbar_main"
+        android:id="@+id/homeToolbar" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btnHomeToAlphabet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/to_alphabet"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/btnHomeToStress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeToolbar" />
+
+    <Button
+        android:id="@+id/btnHomeToStress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/to_stress"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/btnHomeToBirthstones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnHomeToAlphabet" />
+
+    <Button
+        android:id="@+id/btnHomeToBirthstones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/to_birthstones"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/btnHomeToAnimalHouse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnHomeToStress" />
+
+    <Button
+        android:id="@+id/btnHomeToAnimalHouse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/to_animal_house"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnHomeToBirthstones" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
